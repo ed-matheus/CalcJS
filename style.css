@@ -1,0 +1,116 @@
+/* Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Colors */
+:root {
+  --main-color: #2470ff;
+  --white: #f7f7f7;
+  --dark-gray: #494949;
+  --light-gray: #adadad;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6d6d6;
+}
+
+/* Main Calc container */
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 12px 28px 40px 28px;
+  width: 235px;
+  height: 475px;
+  border-radius: 12px;
+  background: #373737;
+  background: linear-gradient(180deg, rgba(55, 55, 55, 1) 0%, rgba(3, 3, 3, 1) 100%);
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  margin: 12px 0px 20px 0px;
+}
+
+/* All Calc Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  border-radius: 100%;
+  border: none;
+  width: 48px;
+  height: 48px;
+  place-items:  center;
+  font-size: 1.3rem;
+}
+
+.btn-gray {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+}
+
+.btn-dark {
+  background: none;
+  color: var(--white);
+  border: 1px solid var(--dark-gray);
+}
+
+.btn-equal {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+/* Display where the magic happens */
+.display {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: end;
+  align-items: end;
+
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.tabs {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--light-gray);
+  text-align: center;
+}
+
+.tabs .calc {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  width: 50%;
+  padding: 8px 0px;
+}
+
+.tabs .conv {
+  border-bottom: 3px solid #616161;
+  width: 50%;
+  padding: 8px 0px;
+}
