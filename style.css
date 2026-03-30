@@ -85,11 +85,17 @@ button {
   height: 80px;
 
   display: flex;
+  flex-direction: column;
   justify-content: end;
   align-items: end;
 
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: var(--white);
+}
+
+.display #expression {
+  color: var(--light-gray);
+  font-size: 1rem;
 }
 
 .tabs {
