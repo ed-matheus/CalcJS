@@ -81,7 +81,7 @@ buttons.forEach(btn => btn.addEventListener("click", () => {
     operation = String(operationArr[0])
 
   } else if (value === "+/-" && operation != "") {
-    console.log(typeof operation, operation)
+    // console.log(typeof operation, operation)
 
     if (String(operation).startsWith("-") || String(totalResult).startsWith("-")) {
       // totalResult
@@ -95,6 +95,16 @@ buttons.forEach(btn => btn.addEventListener("click", () => {
     total.innerHTML = operation
 
     // console.log(operation * (-1))
+
+  } else if (value === "%" && operation != "") {
+    // console.log(operation)
+    const hasOperator = /[×÷+\-]/.test(operation)
+
+    if (!hasOperator) {
+      operation = String(Number(operation) / 100)
+      total.innerHTML = operation
+      expression.innerHTML = `${operation}%`
+    }
 
   } else {
 
