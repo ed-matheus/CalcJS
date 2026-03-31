@@ -2,7 +2,7 @@
 
 A clean, minimal calculator built with vanilla HTML, CSS and JavaScript — no frameworks, no libraries, just pure code.
 
-![CalcJS Preview](./assets/preview.png)
+![CalcJS Preview](./assets/preview-image.png)
 
 ## ✨ Features
 
