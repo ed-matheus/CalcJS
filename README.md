@@ -2,7 +2,7 @@
 
 A clean, minimal calculator built with vanilla HTML, CSS and JavaScript — no frameworks, no libraries, just pure code.
 
-![CalcJS Preview](./preview.png)
+![CalcJS Preview](./assets/preview.png)
 
 ## ✨ Features
 
@@ -12,13 +12,12 @@ A clean, minimal calculator built with vanilla HTML, CSS and JavaScript — no f
 - Decimal point support
 - Real-time expression display
 - Clear button (`C`) to reset the display
-- Keyboard support
 - Dark mode UI
 - Responsive layout
 
 ## 🚀 Live Demo
 
-[View live demo →](https://your-deploy-link.netlify.app)
+[View live demo →](https://calc-js-self.vercel.app/)
 
 ## 🛠️ Built With
 
@@ -30,6 +29,8 @@ A clean, minimal calculator built with vanilla HTML, CSS and JavaScript — no f
 
 ```
 CalcJS/
+├── assets/
+│   └── preview.png
 ├── index.html
 ├── style.css
 ├── script.js
